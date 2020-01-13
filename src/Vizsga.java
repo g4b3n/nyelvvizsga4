@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Vizsga {
 
     public String getNyelv() {
@@ -37,5 +39,12 @@ public class Vizsga {
     private int[] sikeres;
     private int[] sikertelen;
 
-
+    @Override
+    public String toString() {
+        return "Vizsga{" +
+                "nyelv='" + nyelv + '\'' +
+                ", sikeres=" + Arrays.toString(sikeres) +
+                ", sikertelen=" + Arrays.toString(sikertelen) +
+                '}';
+    }
 }
